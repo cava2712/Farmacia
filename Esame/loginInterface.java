@@ -2,8 +2,7 @@ package Esame;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class loginInterface extends JFrame implements ActionListener
 {
@@ -14,8 +13,9 @@ public class loginInterface extends JFrame implements ActionListener
     private final JTextField TextUtente;
     private final JPasswordField TextPassword;
     private final JButton BtnLogin;
-    private final JLabel Lreg;
+    private final JButton Lreg;
     private final ButtonGroup RadioGroup;
+    private final JLabel Nc;
 
     public loginInterface() {
         super("Login");
@@ -30,12 +30,11 @@ public class loginInterface extends JFrame implements ActionListener
         TextPassword = new JPasswordField();
         TextPassword.setSize(190, 20);
         BtnLogin = new JButton("Login");
-
-        Lreg = new JLabel("Registrati");
-
+        Lreg = new JButton("Registrati");
+        Nc=new JLabel("Cliente");
 
         JPanel p1 = new JPanel(new GridLayout(3, 1,3,5));
-        p1.add(new JLabel("Cliente"));
+        p1.add(Nc);
         p1.add(RadioCliente);
         p1.add(new JLabel("Farmacista"));
         p1.add(RadioFarmacista);
@@ -62,15 +61,17 @@ public class loginInterface extends JFrame implements ActionListener
 
         /* JFrame methods called */
         setContentPane(p4);
-        setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(350, 200);
         setVisible(true);
         setResizable(false);
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
         BtnLogin.addActionListener(this);
+        Lreg.addActionListener(this);
 
     }
+
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -78,7 +79,13 @@ public class loginInterface extends JFrame implements ActionListener
             //qua prendiamo i dati e poi facciamo la query
             //se va a buon fine creiamo l'utente e lo passiamo come parametro alla finestra successiva
             dispose();
+            //controllo esiste cliente
             new HomeCliente(TextUtente.getText(),String.valueOf(TextPassword.getPassword()));
+        }
+        if(e.getSource() == Lreg)
+        {
+            dispose();
+            new Registrazione();
         }
     }
 

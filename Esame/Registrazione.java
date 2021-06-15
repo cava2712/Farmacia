@@ -47,7 +47,7 @@ public class Registrazione extends JFrame implements ActionListener {
 
         /* JFrame methods called */
         setContentPane(p4);
-        setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(350, 200);
         setVisible(true);
         setResizable(false);
@@ -62,7 +62,7 @@ public class Registrazione extends JFrame implements ActionListener {
             //qua prendiamo i dati e poi facciamo la query
             //se va a buon fine creiamo l'utente e lo passiamo come parametro alla finestra successiva
             Utente u=new Utente(Types.Cliente,TextNome.getText(),String.valueOf(TextPass.getPassword()),TextCognome.getText(),TextEmail.getText(),TextCF.getText());
-            //lo creiamo
+            //lo creiamo nel database
             dispose();
             new HomeCliente(u.getNome(),u.getPassword());
         }
