@@ -1,15 +1,12 @@
 package Esame;
 
-import Farmacia.HomeCliente;
-import Farmacia.Types;
-import Farmacia.Utente;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class loginInterface extends JFrame implements ActionListener {
+public class loginInterface extends JFrame implements ActionListener
+{
     private static final long serialVersionUID = 1L;
     private final JRadioButton RadioFarmacista;
     private final JRadioButton RadioCliente;
@@ -72,6 +69,7 @@ public class loginInterface extends JFrame implements ActionListener {
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
         BtnLogin.addActionListener(this);
+
     }
 
     @Override
@@ -79,13 +77,12 @@ public class loginInterface extends JFrame implements ActionListener {
         if (e.getSource() == BtnLogin) {
             //qua prendiamo i dati e poi facciamo la query
             //se va a buon fine creiamo l'utente e lo passiamo come parametro alla finestra successiva
-            Utente u=new Utente(Types.Cliente);
             dispose();
-            new HomeCliente(u);
+            new HomeCliente(TextUtente.getText(),String.valueOf(TextPassword.getPassword()));
         }
     }
 
     public static void main(String[] args) {
-        new Farmacia.loginInterface();
+        new Esame.loginInterface();
     }
 }

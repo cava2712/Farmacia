@@ -1,4 +1,4 @@
-package Farmacia;
+package Esame;
 
 public enum Types {
     Cliente,
