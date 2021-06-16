@@ -9,7 +9,12 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="com.sparkjava:spark-core:2.5.5" level="project" />
+<<<<<<< HEAD
     <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-core:2.11.3" level="project" />
     <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-databind:2.11.3" level="project" />
+=======
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-databind:2.11.3" level="project" />
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-core:2.11.3" level="project" />
+>>>>>>> badc9203b11c02e8fa2598dcc59d2068ac13deb0
   </component>
 </module>
