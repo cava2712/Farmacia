@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2b46625-5bf8-426c-a962-9be02a2e62fe" name="Default Changelist" comment="">
+    <list default="true" id="0602013a-a5b2-4da2-a6f3-cea873f88be9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Esame.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Farmaco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeCliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDBCServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Registrazione.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Types.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loginInterface.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,25 +23,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1tzPyGIrF8deFB9a3O8MyO6Tbtm" />
+  <component name="ProjectId" id="1u1RNxp6zWqlSgX9mRIlA8nCwbd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/prova/src/Esame" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e2b46625-5bf8-426c-a962-9be02a2e62fe" name="Default Changelist" comment="" />
-      <created>1623769197151</created>
+      <changelist id="0602013a-a5b2-4da2-a6f3-cea873f88be9" name="Default Changelist" comment="" />
+      <created>1623831075623</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1623769197151</updated>
+      <updated>1623831075623</updated>
     </task>
     <servers />
   </component>
@@ -44,6 +56,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
